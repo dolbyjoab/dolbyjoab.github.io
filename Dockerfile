@@ -1,16 +1,20 @@
-FROM ruby:3.1.1-alpine3.15
+FROM jekyll/jekyll:latest as build
 
-RUN apk add --no-cache build-base nodejs-current
+WORKDIR /srv/jekyll
 
-RUN gem install bundler
+ADD . /srv/jekyll
 
-WORKDIR /usr/src/app
+RUN gem install bundler && \
+    rm -rf Gemfile.lock && \
+    chmod -R 777 ${PWD} && \
+    bundle update && \
+    bundle install
+    # jekyll build && \
+    # jekyll serve --livereload --drafts --trace
 
-COPY . /usr/src/app
+ARG build_command
+ENV BUILD_COMMAND ${build_command}
 
-RUN bundle install
+CMD ${BUILD_COMMAND}
 
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
-
-EXPOSE 4000
-
+# EXPOSE 4000
