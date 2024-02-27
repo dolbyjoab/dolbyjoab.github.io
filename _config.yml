@@ -2,7 +2,7 @@ title: DolbyTo.dev
 subtitle: A DevOps/SRE, citizen of the world.
 description: >- # this means to ignore newlines until "baseurl:"
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://dolbyto.dev" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 # Navigation
 urls:
