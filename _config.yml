@@ -6,12 +6,12 @@ url: "https://dolbyto.dev" # the base hostname & protocol for your site, e.g. ht
 baseurl: "" # the subpath of your site, e.g. /blog
 # Navigation
 urls:
-#    - text: Home
-#      url: /
+    - text: Home
+      url: /
 #    - text: About
 #      url: /about
-#    - text: Blog
-#      url: /blog
+    - text: Blog
+      url: /blog
 #    - text: Gallery
 #      url: /gallery
 #    - text: Shop
@@ -24,7 +24,7 @@ urls:
 
 author_logo: profile.png
 author: Etienne
-author_bio: -- 
+author_bio: I'm an explorer at heart. I love to travel, immerse myself in new cultures, and meet people from all walks of life. I believe in connection, and I consider myself a friend to everyone I meet. 
 author_email: "et@dolbyto.dev"
 author_location: earth
 author_website_url: "https://dolbyto.dev"
