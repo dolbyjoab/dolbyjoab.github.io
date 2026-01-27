@@ -1,11 +1,22 @@
 # Site settings
-title: Dolbyto | DevOps/SRE
+title: Etienne Delsy | Senior SRE & DevOps Engineer
 email: et@dolbyto.dev
 description: >-
-  Personal website of Dolbyto - A DevOps/SRE professional, passionate about technology and automation.
-baseurl: "" # the subpath of your site
-url: "https://dolbyto.dev" # your site's domain
-author: Dolbyto
+  Senior Site Reliability Engineer with 8+ years of experience designing and optimizing
+  large-scale AWS cloud environments. Expert in observability, infrastructure automation,
+  Kubernetes, Terraform, and platform reliability. Based in Toronto, Canada.
+baseurl: ""
+url: "https://dolbyto.dev"
+author: Etienne Delsy
+
+# SEO and Social
+twitter:
+  username: dolbyjoab
+social:
+  name: Etienne Delsy
+  links:
+    - https://linkedin.com/in/dolbyjoab
+    - https://github.com/dolbyjoab
 
 # Build settings
 markdown: kramdown
